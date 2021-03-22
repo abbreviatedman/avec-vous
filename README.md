@@ -1,15 +1,21 @@
-# User Stories
+# Avec Vous
 
-## MVP
+A social story-writing app. (A la [the exquisite corpse writing exercise]())
 
-### As a user, I want to:
+## About
 
-- log in
+## User Stories
+
+### MVP
+
+#### As a user, I want to:
+
 - sign up
+- log in
 - view stories
 - start a story
 
-### As a logged-in user, I want to:
+#### As a logged-in user, I want to:
 
 - log out
 - see my stories
@@ -17,16 +23,16 @@
 - take a turn in an existing story
 - invite a user to a story
 - accept an invite to a story
-- Close one of my stories
+- close one of my stories
 - title a closed story
 
-## Stretch
+### Stretch
 
-### As a user, I want to:
+#### As a user, I want to:
 
 - view a user
 
-### As a logged-in user, I want to:
+#### As a logged-in user, I want to:
 
 - see my sentences
 - see my profile
