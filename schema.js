@@ -41,7 +41,7 @@ const Story = {
     default: 0,
   },
 
-  open: {
+  isOpen: {
     type: Boolean,
     required: true,
     default: true,
