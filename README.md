@@ -25,6 +25,7 @@ In this app, users will collaborate to write a story, taking turns to write sent
 - [ ] take a turn in an existing story
 - [ ] invite a user to a story
 - [ ] accept an invite to a story
+- [ ] decline an invite to a story
 - [ ] close one of my stories
 - [ ] title a closed story
 
