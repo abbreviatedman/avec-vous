@@ -53,3 +53,10 @@ const Story = {
     default: [],
   },
 };
+
+const Invite = {
+  story: {
+    type: Story,
+    required: true,
+  },
+};
