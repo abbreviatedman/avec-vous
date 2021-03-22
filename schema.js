@@ -1,6 +1,5 @@
 const User = {
   username: {
-    type: String,
     required: true,
     unique: true,
   },
@@ -15,21 +14,38 @@ const User = {
     type: String,
     required: true,
   },
-
-  stories: [Story],
 };
 
 const Story = {
   title: {
     type: String,
+    required: true,
+    default: "",
   },
 
-  sentences: [Sentence],
-};
-
-const Sentence = {
-  text: {
-    type: String,
+  admin: {
+    type: User,
     required: true,
   },
+
+  collaborators: [
+    {
+      type: User,
+      required: true,
+    },
+  ],
+
+  turn: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+
+  open: {
+    type: Boolean,
+    required: true,
+    default: true,
+  },
+
+  sentences: [String],
 };
