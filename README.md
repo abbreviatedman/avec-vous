@@ -36,6 +36,7 @@ Additional features outside of the MVP include further social aspects (friends, 
 #### As a user, I want to:
 
 - [ ] view a user
+- [ ] attempt an acton that requires login, be sent to a login/signup page, and be returned to my attempted action if successful
 
 #### As a logged-in user, I want to:
 
