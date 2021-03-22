@@ -39,8 +39,8 @@ In this app, users will collaborate to write a story, taking turns to write sent
 - see my sentences
 - see my profile
 - ask to join a story
-- accept another user to a story
 - accept another user's request to join to a story
 - remove someone from a story
 - friend a user
 - accept a user's friend request
+- message a friended or collaborating user
