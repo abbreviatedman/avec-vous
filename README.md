@@ -47,3 +47,10 @@ Additional features outside of the MVP include further social aspects (friends, 
 - [ ] friend a user
 - [ ] accept a user's friend request
 - [ ] message a friended or collaborating user
+
+## Technologies Used
+
+- React
+- MongoDB
+- Express
+- Mongoose
