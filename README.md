@@ -1,6 +1,6 @@
 # Avec Vous
 
-A social story-writing app. (A la [the exquisite corpse writing exercise]())
+A social story-writing app.
 
 ## About
 
