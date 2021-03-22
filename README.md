@@ -54,3 +54,4 @@ Additional features outside of the MVP include further social aspects (friends, 
 - MongoDB
 - Express
 - Mongoose
+- Web Sockets
