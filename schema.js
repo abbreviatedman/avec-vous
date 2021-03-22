@@ -47,5 +47,9 @@ const Story = {
     default: true,
   },
 
-  sentences: [String],
+  sentences: {
+    type: [String],
+    required: true,
+    default: [],
+  },
 };
