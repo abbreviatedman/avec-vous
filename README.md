@@ -4,6 +4,8 @@ A social story-writing app.
 
 ## About
 
+In this app, users will collaborate to write a story, taking turns to write sentences. Users can be parts of as many stories as they want, and from their dashboards they can see every story they're taking parts in (and whose turn it is). They can start a story, invite other users to take part in it, and close and title it once they consider it done.
+
 ## User Stories
 
 ### MVP
