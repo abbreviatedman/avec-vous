@@ -10,7 +10,7 @@ Additional features outside of the MVP include further social aspects (friends, 
 
 ## User Stories
 
-### MVP
+### 1.0 Version
 
 #### As a user, I want to:
 
@@ -31,7 +31,7 @@ Additional features outside of the MVP include further social aspects (friends, 
 - [ ] close one of my stories
 - [ ] title a closed story
 
-### Stretch
+### Future Versions
 
 #### As a user, I want to:
 
