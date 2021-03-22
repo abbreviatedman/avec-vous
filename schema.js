@@ -59,4 +59,9 @@ const Invite = {
     type: Story,
     required: true,
   },
+
+  user: {
+    type: User,
+    required: true,
+  },
 };
