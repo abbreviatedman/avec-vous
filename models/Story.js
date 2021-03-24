@@ -1,22 +1,6 @@
-const User = {
-  username: {
-    required: true,
-    unique: true,
-  },
+const mongoose = require("mongoose");
 
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-
-  password: {
-    type: String,
-    required: true,
-  },
-};
-
-const Story = {
+const StorySchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -24,13 +8,13 @@ const Story = {
   },
 
   admin: {
-    type: User,
+    type: mongoose.ObjectId,
     required: true,
   },
 
   collaborators: [
     {
-      type: User,
+      type: mongoose.ObjectId,
       required: true,
     },
   ],
@@ -52,16 +36,8 @@ const Story = {
     required: true,
     default: [],
   },
-};
+});
 
-const Invite = {
-  story: {
-    type: Story,
-    required: true,
-  },
+const Story = mongoose.model("Story", StorySchema);
 
-  user: {
-    type: User,
-    required: true,
-  },
-};
+module.exports = Story;
