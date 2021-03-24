@@ -1,58 +1,49 @@
-# Avec Vous
+# Avec Vous - Server
 
-A social story-writing app.
+A backend serving up an API for a social story-writing app.
 
 ## About
 
-In this app, users will collaborate to write a story, taking turns to write sentences. Users can be parts of as many stories as they want, and from their dashboards they can see every story they're taking parts in (and whose turn it is). They can start a story, invite other users to take part in it, and close and title it once they consider it done.
+This backend app will manage a server and take in requests via the API described below. It is the backend for [the Avec Vous app](https://github.com/abbreviatedman/avec-vous-client).
 
-Additional features outside of the MVP include further social aspects (friends, messaging, profile views) and further story collaborator management.
+## Installation and Usage
 
-## User Stories
+- Install MongoDB.
+- Clone this repo.
+- Navigate to the directory in your terminal.
+- Run `npm install`.
+- Run `npm run seed` if you'd like some starting users in your database.
+- Run `npm start` to start the server.
+- Hit up the routes below via a browser, curl, Postman, or your favorite route-hitting tool.
 
-### 1.0 Version
+## Routes - MVP Version
 
-#### As a user, I want to:
+- [x] `GET /stories`
+- [ ] `GET /stories/:storyId`
+- [ ] `GET /stories/:userId`
+- [ ] `GET /stories/:userId/next`
+- [ ] `PUT /stories/:storyId`
+- [ ] `POST /stories`
+- [ ] `POST /users/signup`
+- [ ] `POST /users/login`
+- [ ] `POST /users/logout`
+- [ ] `GET /invites`
+- [ ] `POST /invites`
 
-- [ ] sign up
-- [ ] log in
-- [ ] view stories
-- [ ] start a story
+## Future Version Routes
 
-#### As a logged-in user, I want to:
-
-- [ ] log out
-- [ ] see my stories
-- [ ] see which stories it's my turn in
-- [ ] take a turn in an existing story
-- [ ] invite a user to a story
-- [ ] accept an invite to a story
-- [ ] decline an invite to a story
-- [ ] close one of my stories
-- [ ] title a closed story
-
-### Future Versions
-
-#### As a user, I want to:
-
-- [ ] view a user
-- [ ] be prompted to login/signup and returned to my attempted action if successful
-
-#### As a logged-in user, I want to:
-
-- [ ] see my sentences
-- [ ] see my profile
-- [ ] ask to join a story
-- [ ] accept another user's request to join to a story
-- [ ] remove someone from a story
-- [ ] friend a user
-- [ ] accept a user's friend request
-- [ ] message a friended or collaborating user
+- [ ] `GET /users/:userId`
+- [ ] `GET /sentences/:userId`
+- [ ] `POST /requests/:userId/:storyId`
+- [ ] `PUT /removals/:storyId`
+- [ ] `POST /friends`
+- [ ] `GET /friends/:userId`
+- [ ] `DELETE /friends/:userId`
+- [ ] `GET /messages/:userId1/:userId2`
+- [ ] `POST /messages/:userId1/:userId2`
 
 ## Technologies Used
 
-- React
 - MongoDB
 - Express
 - Mongoose
-- Web Sockets
