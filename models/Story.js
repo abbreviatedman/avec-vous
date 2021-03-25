@@ -25,6 +25,12 @@ const StorySchema = new mongoose.Schema({
     default: 0,
   },
 
+  isComplete: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
+
   isOpen: {
     type: Boolean,
     required: true,
