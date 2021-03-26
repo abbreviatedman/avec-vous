@@ -29,6 +29,7 @@ This backend app will manage a server and take in requests via the API described
 - [ ] `POST /users/logout`
 - [ ] `GET /invites`
 - [ ] `POST /invites`
+- [ ] `DELETE /invites`
 
 ## Future Version Routes
 
