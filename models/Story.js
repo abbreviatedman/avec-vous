@@ -8,13 +8,13 @@ const StorySchema = new mongoose.Schema({
     default: "",
   },
 
-  admin: {
+  editor: {
     type: mongoose.ObjectId,
     ref: "User",
     required: true,
   },
 
-  collaborators: [
+  writers: [
     {
       type: mongoose.ObjectId,
       ref: "User",

@@ -7,7 +7,7 @@ const SentenceSchema = new mongoose.Schema({
     default: "",
   },
 
-  user: {
+  writer: {
     type: mongoose.ObjectId,
     ref: "User",
     required: true,
