@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const { SentenceSchema } = require("./Sentence");
+const { SentenceSchema } = require("./index.js");
+const { autoIncrement } = require("mongoose-plugin-autoinc");
 
 const StorySchema = new mongoose.Schema({
   title: {
@@ -49,4 +50,4 @@ const StorySchema = new mongoose.Schema({
 
 const Story = mongoose.model("Story", StorySchema);
 
-module.exports = Story;
+module.exports = { Story, StorySchema };
