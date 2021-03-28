@@ -56,6 +56,7 @@ const StorySchema = new mongoose.Schema({
 StorySchema.plugin(autoIncrement, {
   model: "Story",
   field: "number",
+  startAt: 1215,
 });
 
 const Story = mongoose.model("Story", StorySchema);
