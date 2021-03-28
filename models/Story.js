@@ -9,6 +9,11 @@ const StorySchema = new mongoose.Schema({
     default: "",
   },
 
+  number: {
+    type: Number,
+    required: true,
+  },
+
   editor: {
     type: mongoose.ObjectId,
     ref: "User",
@@ -46,6 +51,11 @@ const StorySchema = new mongoose.Schema({
     required: true,
     default: [],
   },
+});
+
+StorySchema.plugin(autoIncrement, {
+  model: "Story",
+  field: "number",
 });
 
 const Story = mongoose.model("Story", StorySchema);
