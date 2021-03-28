@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { SentenceSchema } = require("./Sentence");
 
 const StorySchema = new mongoose.Schema({
   title: {
@@ -9,12 +10,14 @@ const StorySchema = new mongoose.Schema({
 
   admin: {
     type: mongoose.ObjectId,
+    ref: "User",
     required: true,
   },
 
   collaborators: [
     {
       type: mongoose.ObjectId,
+      ref: "User",
       required: true,
     },
   ],
@@ -38,7 +41,7 @@ const StorySchema = new mongoose.Schema({
   },
 
   sentences: {
-    type: [String],
+    type: [SentenceSchema],
     required: true,
     default: [],
   },
